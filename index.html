@@ -4,6 +4,17 @@
     <title>YSD SM 3rd Year Legacy Project</title>
 </head>
 <body>
-    <p>This is text message</p>
+    <div id="loginForm"> <!-- 1 -->
+    <span>Enter your github credentials:</span>
+    <form onsubmit="event.preventDefault(); onSubmit(this);">
+        <input type="text" id="login" name="login" placeholder="Github username" required>
+        <input type="password" id="password" name="login" placeholder="Github password/token" required>
+        <input type="submit" value="Access">
+    </form>
+    </div>
+    <script>
+    window.page = '${page}'; // 2
+    </script>
+<script src="js/github.js"></script> <!-- 3 -->
 </body>
 </html>
